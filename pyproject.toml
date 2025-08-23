@@ -1,0 +1,21 @@
+[project]
+name = "abedemo"
+version = "0.1.0"
+description = "一个模拟ABE的车载系统"
+readme = "README.md"
+authors = [
+    { name = "Ardenet", email = "69284622+Ardenet@users.noreply.github.com" },
+]
+requires-python = ">=3.9.0"
+dependencies = ["charm-crypto"]
+
+[dependency-groups]
+lint = [
+    "ruff",
+]
+
+[tool.uv.sources]
+charm-crypto = { git = "https://github.com/JHUISI/charm.git", branch = "dev" }
+
+[tool.uv]
+default-groups = ["lint"]
