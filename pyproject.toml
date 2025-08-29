@@ -19,3 +19,8 @@ charm-crypto = { git = "https://github.com/JHUISI/charm.git", branch = "dev" }
 
 [tool.uv]
 default-groups = ["lint"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+pacakges = ["abedemo"]
